@@ -1,0 +1,40 @@
+There has been a significant increase in the availability
+of 3D players and displays in the last years. Nonetheless,
+the amount of 3D content has not experimented an increment of
+such magnitude. To alleviate this problem, many algorithms for
+converting images and videos from 2D to 3D have been proposed.
+Here, we present an automatic learning-based 2D-3D image conversion
+approach, based on the key hypothesis that color images
+with similar structure likely present a similar depth structure.
+The presented algorithm estimates the depth of a color query
+image using the prior knowledge provided by a repository of
+color + depth images. The algorithm clusters this database
+attending to their structural similarity, and then creates a
+representative of each color-depth image cluster that will be
+used as prior depth map. The selection of the appropriate
+prior depth map corresponding to one given color query image
+is accomplished by comparing the structural similarity in the
+color domain between the query image and the database. The
+comparison is based on a K-Nearest Neighbor framework that
+uses a learning procedure to build an adaptive combination of
+image feature descriptors. The best correspondences determine
+the cluster, and in turn the associated prior depth map. Finally,
+this prior estimation is enhanced through a segmentation-guided
+filtering that obtains the final depth map estimation. This
+approach has been tested using two publicly available databases,
+and compared with several state-of-the-art algorithms in order
+to prove its efficiency.
+There are two main approaches to 2D-to-3D image and
+video conversion depending on whether a human operator is
+needed or not. In the denominated semi-automatic methods,
+the intervention of a human operator in the process is needed
+to assign depth to different parts of the scene, creating a sparse
+depth map. Then, the sparse map is processed to create a
+dense depth map over the whole image or video. Alternatively,
+the human operator can assign a global variation to the whole
+scene to define a depth prior, which is then refined to make the
+different objects of the scene appear in the final depth map.
+The importance of the human actuation may vary from a small
+sketch that assigns depths to different regions of the scene up
+to an accurate delimitation of the objects in the scene in order
+to assign depth values to them.
