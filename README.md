@@ -1,4 +1,4 @@
-# Text-to-Visualization
+# Word-Frequency-Visualizer
 Drawing Histogram using Matplotlib for depicting the frequency of each word in text file.
 
 Problem Statement:
